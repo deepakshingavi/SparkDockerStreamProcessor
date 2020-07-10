@@ -72,6 +72,11 @@ docker cp transaction-stream-processor/src/main/resources/sample_data.csv kafka:
 #Check the output of transaction-streamer-processor in topic "output-topic" 
 /opt/kafka_2.11-0.10.0.0/bin/kafka-console-consumer.sh --zookeeper zookeeper:2181 --from-beginning --topic output-topic
 
+#Stopping and removing the service
+docker stop transaction-stream-processor
+docker rm transaction-stream-processor
+
+#Removing the service
 ```   
 
 Note : Spark streamer takes while to push the output topic 
