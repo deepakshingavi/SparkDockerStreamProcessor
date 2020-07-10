@@ -1,7 +1,5 @@
 FROM dipakpravin87/spark-base:2.4.5
 
-LABEL maintainer="Gezim Sejdiu <g.sejdiu@gmail.com>, Giannis Mouchakis <gmouchakis@gmail.com>"
-
 COPY worker.sh /
 
 ENV SPARK_WORKER_WEBUI_PORT 8081
